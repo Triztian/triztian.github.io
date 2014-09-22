@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>tristianazuara</title><link href="http://triztian.github.io/" rel="alternate"></link><link href="http://triztian.github.io/feeds/all.atom.xml" rel="self"></link><id>http://triztian.github.io/</id><updated>2014-08-07T00:00:00-07:00</updated><entry><title>Git Commands</title><link href="http://triztian.github.io/git-commands.html" rel="alternate"></link><updated>2014-08-07T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2014-08-07:git-commands.html</id><summary type="html">&lt;p&gt;If you use git as your version control tool and have ever needed to use it in
+an unusual way here I will list uses that took me more than 10 mins of reading
+until I found a solution.&lt;/p&gt;
+&lt;p&gt;If you're new to git here is an excelent resource: &lt;a href="http://www.git-scm.com/"&gt;http://www.git-scm.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Last commit message text&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git log | grep &lt;span class="s1"&gt;&amp;#39;^\s\s*&amp;#39;&lt;/span&gt; | head -n1
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="git"></category><category term="bash"></category><category term="cli"></category></entry><entry><title>Personal Site (tristian.us)</title><link href="http://triztian.github.io/personal-site.html" rel="alternate"></link><updated>2014-08-01T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2014-08-01:personal-site.html</id><summary type="html">&lt;p&gt;Like every professional in the software and engineering industry I needed a way to convey
+my knowledge, experience and skills to future clients; in other words to create a personal brand. 
+Thats how the planning and development of this site began.&lt;/p&gt;
+&lt;h2&gt;Constraints, Goals and oportunities&lt;/h2&gt;
+&lt;p&gt;One cannot just decide that you need a personal site and get started with the development. As with every project it has to be 
+planned; to a certain degree (not to every detail).&lt;/p&gt;
+&lt;p&gt;I had simple goals for this site:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It had to reflect my skills, knowledge and experience.&lt;/li&gt;
+&lt;li&gt;It had to function as a publishing platform.&lt;/li&gt;
+&lt;li&gt;It had to provide a way to engage prospects.&lt;/li&gt;
+&lt;li&gt;It had to have a clean, simple and maintaineble design (visually and logically).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The above goals are quite common, simple and a bit vague. Thats why every project (and system) 
+needs to adhere to &lt;em&gt;constraints&lt;/em&gt; that allow to narrow down the paths on how to reach
+the stablished goals. Constraints can be of any type; technical, technological or resourced based are few of 
+the most common types.&lt;/p&gt;
+&lt;p&gt;The constraints for this project were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It had to be a &lt;em&gt;static&lt;/em&gt; generated site.&lt;/li&gt;
+&lt;li&gt;It had to use free hosting platforms.&lt;/li&gt;
+&lt;li&gt;It had to strive for web responsiveness.&lt;/li&gt;
+&lt;li&gt;It had to rely on FOSS components.&lt;/li&gt;
+&lt;li&gt;It had to be easy to maintain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The constraints pretty much limit the &lt;em&gt;solution space&lt;/em&gt;, my constraints were mostly technical and technology 
+focused because a personal site is an on-going project in which time is not rigourously controlled.&lt;/p&gt;
+&lt;p&gt;In my opinion every project that is undertaken should offer oportunities of growth and self-improvement; be it
+by learning new skills, trying new technologies or adopting different methodologies.&lt;/p&gt;
+&lt;h2&gt;Design&lt;/h2&gt;
+&lt;p&gt;Design not only refers to the visual design but also on how the solution will be aproached.&lt;/p&gt;
+&lt;p&gt;The second goal "reflect my skills, knwoledge and experience" obviously requires an about page (about me)
+where I list my areas of expertise and how I've developed my self profesionally and technically. 
+I had an objective for my about page; It had to use charts to represent my knowledge.&lt;/p&gt;
+&lt;p&gt;The third goal defines it as a &lt;em&gt;publishing&lt;/em&gt; platform; that involves having content produced peridically.
+Content would be related to the work and services that I offer.&lt;/p&gt;
+&lt;p&gt;The fourth goal is to engage prospects. My solution to that offer a newsletter/mailing list where 
+visitors can subscribe and receive updates with content that add value to their business or that are
+relevant to their fields. Also a comments section for each publication.&lt;/p&gt;
+&lt;p&gt;The fifth goal says that it has to be maintainable, be simple and clean. This particular goal 
+requires use of creativity and is polished across all stages of the project, it was not decided
+completely at the start of the project.&lt;/p&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;So, now that I've defined in terms of the user experience how the site will work it is time to determine
+the tools and technology to implement it.&lt;/p&gt;
+&lt;p&gt;With the creation of a personal site, I wanted to explore using a static site genertor, also I wanted it 
+to be python based. That left me with only two options (that I know of):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hyde.github.io/"&gt;Hyde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At first I tried using Hyde, but it seems like the project development has not been that active and I had 
+a few issues while testing it. Then I tried pelican and I was convinced, it seemed to fit my work flow better
+and I like the way it has been architected.&lt;/p&gt;
+&lt;p&gt;For showing my skills I wanted to use a chart, after fiddling with the idea of creating a charting library specific for showing skills
+I found &lt;a href="http://www.chartjs.org/"&gt;chart.js&lt;/a&gt; which is an absolutly wonderfull charting library.&lt;/p&gt;
+&lt;p&gt;I then started looking on how to create themes for Pelican something that is well documented on the &lt;a href="http://pelican.readthedocs.org/en/latest/themes.html"&gt;Pelican docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The articles are created using markdown, reStructured text or even html if a more &lt;em&gt;intricate&lt;/em&gt; and &lt;em&gt;detailed&lt;/em&gt; article is needed.&lt;/p&gt;
+&lt;p&gt;To showcase projects that I've worked on I'll create articles and categorize them with the &lt;code&gt;project&lt;/code&gt; category, those articles 
+will not appear on the index page.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Creating a personal site is like every project, it has to be planned, it has to be contrained and it 
+has to offer oportunities of personal and professional growth.&lt;/p&gt;
+&lt;p&gt;It is an ongoing project but I believe I've set the guidelines and took advantage of the oportunities it presented.&lt;/p&gt;</summary><category term="personal-site"></category><category term="planning"></category></entry><entry><title>Translation and Theme Customistation</title><link href="http://triztian.github.io/progressfin.com.html" rel="alternate"></link><updated>2014-06-10T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2014-06-10:progressfin.com.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;A San Francisco based company needed to complete the spanish version of their site; which 
+mainly served the hispanic community. It also needed to add a news and events section, 
+with the ability to manage the publishing of news and events posts from the admin panel of the wordpress installation.&lt;/p&gt;
+&lt;h3&gt;Why I worked on this project&lt;/h3&gt;
+&lt;p&gt;Having worked with the front end team to develop the company's main product platform. I had the skills 
+and cultural knowledge to complete the spanish version of the site and to implement the news and events page in
+an intuitive manner.&lt;/p&gt;
+&lt;h3&gt;What problems got solved&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The site's spanish version was now available.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many grammatical errors on the spanish version.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wording of the translations; a proper use of "slang" words relevant to their customers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uniformity in presenting success stories of customers and the company's team.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved code base where possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;Having the site available in the primary language of its customers reinforced the company's commitment 
+to serving the hispanic community in helping them succeed and on creating a positive credit score. Also, it improved
+the communication of the company's mission by using a more familiar tone and wording in spanish (a bit less formal).&lt;/p&gt;</summary><category term="PHP"></category><category term="Wordpress"></category><category term="web-application"></category><category term="i18n"></category><category term="HTML"></category><category term="CSS"></category><category term="Javascript"></category></entry><entry><title>Loan Application and Disbursement</title><link href="http://triztian.github.io/lad.html" rel="alternate"></link><updated>2013-08-01T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2013-08-01:lad.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;A San Francisco based company needed to expand their bandwidth to keep moving forward the development
+of the project that enabled the company's flagship product; &lt;em&gt;responsible loans&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Why I worked on this project&lt;/h3&gt;
+&lt;p&gt;I had the knowledge, experience and skills to provide the needed bandwidth. Also, I was a good fit with the
+team and company culture, based on their customer profile.&lt;/p&gt;
+&lt;h3&gt;What problems got solved&lt;/h3&gt;
+&lt;p&gt;The most significant were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Small errors in the code base.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Non-scalable architecture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Small bandwidth for moving the project forward.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;The company started to iterate faster on the platform that allowed its flagship product to be offered.
+It allowed to further refine the platform and ease the loan application and disbursement process when
+performed by the agent.&lt;/p&gt;</summary><category term="Javascript"></category><category term="HTML"></category><category term="CSS"></category><category term="LESS"></category><category term="Backbone.js"></category><category term="Bootstrap3"></category><category term="single-page-application"></category></entry><entry><title>Enterprise Resource Planning</title><link href="http://triztian.github.io/erp-tryton-core.html" rel="alternate"></link><updated>2012-04-03T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2012-04-03:erp-tryton-core.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;The company was looking into transitioning its systems to use a Enterprise Resource Planning
+system. The system would be deployed in phases, as a starting point a production (manufactoring)
+reporting module will be created, followed with a Human Resources and Inventory module that supported
+assembly and line provisioning operations.&lt;/p&gt;
+&lt;h3&gt;Why I worked in this project&lt;/h3&gt;
+&lt;p&gt;I had already worked with them in creating several web applications that bridged legacy systems with the new
+web applications, I've also had created an API that exposed the information contained in the legacy systems.&lt;/p&gt;
+&lt;p&gt;I had the experience and knowledge to search for an ERP system or framework that suited their budget and 
+deadlines given their actual infrastructure.&lt;/p&gt;
+&lt;h3&gt;Problems that were solved&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Production engineers no longer had to ask for WRITTEN production reports, it was all calculated 
+   automatically by the ERP system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There would now be traces of which work shift manager captured and verified the production count.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data was now archived in a proper database system, queryable and auditible instead of being 
+   scattered in Excel Spreadsheets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data was now accessible any time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inventory levels were now automatically calculated and initiated by employees rather than by the purchasing 
+   department.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was now possible to usage activity in the ERP system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;Production reports were now available immediately after the data had been captured by the work shift manager, this
+allowed for production managers to analyse the data, inform their superiors, make forecast and decisions in a much
+more timely manner that beneffited the company in keep their customers happy.&lt;/p&gt;
+&lt;p&gt;Also since everything was logged the system provided accountability for actions during each shift. It also foster
+a culture of transparence within production managers and production engineers.&lt;/p&gt;</summary><category term="Python"></category><category term="Enterprise"></category><category term="application-server"></category><category term="TrytonERP"></category><category term="matplotlib"></category></entry><entry><title>Online Order Processing (Inherited)</title><link href="http://triztian.github.io/coom.html" rel="alternate"></link><updated>2012-01-01T00:00:00-08:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2012-01-01:coom.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;A company merger was in place and both companies had similiar technlogies due to being in the same market.
+I had to find a way to take advantage of the tech assets that the merge would bring in.&lt;/p&gt;
+&lt;h3&gt;Why I worked in this project.&lt;/h3&gt;
+&lt;p&gt;I was the right person for this project because I had built a similar web application for one of the 
+merging companies, thus I would be really familiar with the domain knowledge of the inherited application.&lt;/p&gt;
+&lt;h3&gt;What problems got solved.&lt;/h3&gt;
+&lt;p&gt;The most significant were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Employees (customer service) workflow was greatly simplified because now they had access to the data in ONE
+   application instead of requiring to log onto two different applications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data was centralized and it no longer had to be updated in two different places.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Customer was now able to check the status of its order (a product that had to be manufactured and that took 1 to 3 weeks to complete)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Customer was able to place their orders online, at any time (product highly configurable)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;This allowed for the CEO to onboard new customers by leverging the company's tech offering of visibility and 
+self-service. It also simplified customer service and production engineers workflow because data was now availble
+in a digital format and could be placed into production much more easily.&lt;/p&gt;
+&lt;p&gt;It impacted revenue and operation costs in a positive way.&lt;/p&gt;</summary><category term="php"></category><category term="css"></category><category term="html"></category><category term="javascript"></category><category term="jquery"></category><category term="mysql"></category><category term="web-application"></category></entry><entry><title>Warranty Management</title><link href="http://triztian.github.io/warranty-management.html" rel="alternate"></link><updated>2012-01-01T00:00:00-08:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2012-01-01:warranty-management.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;A faulty batch of 100+ products that was already shipped to the customers was discovered, because
+of that it was expected that many orders were to be re-manufactured a systemized approach 
+was planned to avoid interrupting the workflow of new orders.&lt;/p&gt;
+&lt;h3&gt;Why I worked in this project&lt;/h3&gt;
+&lt;p&gt;I had already worked with this company in developing their online order entry systems, which integrated 
+with their manufacturing software. I had the knowledge about their product and the skills needed
+to provide them with the warranty platform.&lt;/p&gt;
+&lt;h3&gt;What problems got solved&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;No more duplicate warranties, because the original claimed warranty was now trackable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove the hassle for the customer of claiming a warranty, the process was now completly web-driven
+   without the need to call customer service.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unability to track the warranted order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove the difficulty of determing if the warranty was applicable or not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The need to retype the order into the manufacturing system, the re-make order integrated witht the
+   manufacturing software.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;Reduced operation costs in fulfilling the warranties. Reduced false-positive warranty cases. 
+Improved the company's image because it proved that the company would take responsability of 
+it's mistakes and reimburse the customer or provide a remake for the same order.&lt;/p&gt;</summary><category term="java"></category><category term="servlets"></category><category term="tomcat"></category><category term="mysql"></category><category term="web-application"></category><category term="html"></category><category term="css"></category><category term="javascript"></category></entry><entry><title>Online Order Processing</title><link href="http://triztian.github.io/tubsdb.html" rel="alternate"></link><updated>2010-08-20T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2010-08-20:tubsdb.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;The company needed to digitize itself; eliminating paper work and easing the job 
+burden of customer service by automating certain steps of the order fulfillment 
+process.&lt;/p&gt;
+&lt;h3&gt;Why I worked in this project&lt;/h3&gt;
+&lt;p&gt;This was my first project in a professional environment. I had the skills needed to complete the project.
+In a way it was a risk that the customer took but the outcome was much greater that the actual risk, and 
+in the end everyone was happy with the results.&lt;/p&gt;
+&lt;h3&gt;What problems got solved&lt;/h3&gt;
+&lt;p&gt;The most siginificant were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Orders could be placed online, at anytime, from anywhere. Customer Service would review them 
+   and place them into production each morning; if the order was correct and complete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Order traces and logs stopped getting lost.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logs of interaction between the customer and customer service were created.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integrated with the manufacturing system, and avoided data duplication when placing the orders
+   into the production line.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;Created a new tech asset for the company, which would bring &lt;strong&gt;many future&lt;/strong&gt; customers. Reduced operation costs
+by simplifying customer service duties. Reduced manufacturing errors by removing the need to retype the order 
+into the manufacturing system. Improved the companies image because it was now one of the few with IT automation
+systems within the industry.&lt;/p&gt;</summary><category term="java"></category><category term="servlets"></category><category term="tomcat"></category><category term="css"></category><category term="html"></category><category term="web-application"></category><category term="javascript"></category><category term="mysql"></category></entry></feed>

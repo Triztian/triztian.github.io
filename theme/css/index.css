@@ -1,0 +1,44 @@
+
+.whoami strong {
+    text-transform: capitalize;
+    color: #44998E;
+}
+
+.whoami {
+    padding: 20px 0;
+    text-align: center;
+    border-top: solid 2px #D8D4D2;
+    border-bottom: solid 2px #D8D4D2;
+}
+
+.whoami h4 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+.content article {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.content article > * {
+    float: left;
+}
+
+.content article .title {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.content article .date {
+    margin-top: 0;
+}
+
+.content article .featured-image {
+    margin-right: 30px;
+}
+
+
+.content article .read-more {
+    overflow: hidden;
+}

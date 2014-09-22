@@ -1,0 +1,105 @@
+html, body {
+    font-family: Century Gothic, Sans-Serif;
+    font-size: 100%;
+}
+
+body > * {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+script {
+    display: none;
+}
+
+a {
+    color: #969187;
+}
+
+a:hover {
+    color: #8FC798;
+}
+
+header {
+    margin-top:20px;
+}
+
+
+.logo img {
+    width: 250px;
+}
+
+.button.outline-outward {
+    background-color: transparent;
+}
+
+.button.outline-outward:before {
+    border-color: transparent;
+}
+
+.button.outline-outward:hover:before {
+    border-color: #44998E;
+}
+
+.button.outline-outward:hover,
+.button.outline-outward:focus {
+    color: #8FC798;
+}
+
+.navigation, .navigation nav {
+    padding-top: 12px;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+.navigation > * {
+    float: left;
+}
+
+.navigation nav li {
+    float: left;
+    list-style-type: none;
+    margin: 0 0 0 40px;
+}
+
+.navigation nav li a {
+    text-decoration: none;
+    color: #969187;
+}
+
+section.content > h1 {
+    margin-top: 30px;
+}
+
+.tags {
+    padding: 0;
+    margin: 12px 0 0 0;
+    overflow: hidden;
+}
+
+.tags .tag {
+    font-size: 75%;
+    list-style-type: none;
+    margin-right: 15px;
+    background-color: rgba(216, 212, 210, 0.6);
+    padding: 3px;
+}
+
+footer .social {
+    border-bottom: dotted 1px #414143;
+    padding-bottom: 5px;
+}
+
+footer .social li {
+    list-style-type: none;
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+footer .social a {
+    vertical-align: top;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>tristianazuara</title><link href="http://triztian.github.io/" rel="alternate"></link><link href="http://triztian.github.io/feeds/development.atom.xml" rel="self"></link><id>http://triztian.github.io/</id><updated>2014-08-07T00:00:00-07:00</updated><entry><title>Git Commands</title><link href="http://triztian.github.io/git-commands.html" rel="alternate"></link><updated>2014-08-07T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:triztian.github.io,2014-08-07:git-commands.html</id><summary type="html">&lt;p&gt;If you use git as your version control tool and have ever needed to use it in
+an unusual way here I will list uses that took me more than 10 mins of reading
+until I found a solution.&lt;/p&gt;
+&lt;p&gt;If you're new to git here is an excelent resource: &lt;a href="http://www.git-scm.com/"&gt;http://www.git-scm.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Last commit message text&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git log | grep &lt;span class="s1"&gt;&amp;#39;^\s\s*&amp;#39;&lt;/span&gt; | head -n1
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="git"></category><category term="bash"></category><category term="cli"></category></entry></feed>
