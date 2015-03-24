@@ -8,8 +8,9 @@
     padding: 20px 0;
     text-align: center;
     color: white;
-    background-color: #000000;
+    background-color: #006064;
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .whoami p {
@@ -25,8 +26,13 @@
 .domains {
     margin-bottom: 48px;
 }
+
 .domains .domain {
     height: 300px
+}
+
+.domains .domain h2 {
+    color: #5E5E66;
 }
 
 .domains .domain a {
