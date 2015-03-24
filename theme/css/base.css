@@ -24,6 +24,7 @@ a:hover {
 
 header {
     margin-top:20px;
+    margin-bottom:24px;
 }
 
 
@@ -31,20 +32,21 @@ header {
     width: 250px;
 }
 
-.button.outline-outward {
+.button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button.hvr-underline-from-center {
     background-color: transparent;
 }
 
-.button.outline-outward:before {
-    border-color: transparent;
+.button.hvr-underline-from-center:before {
+    background: #44998E;
 }
 
-.button.outline-outward:hover:before {
-    border-color: #44998E;
-}
-
-.button.outline-outward:hover,
-.button.outline-outward:focus {
+.button.hvr-underline-from-center:hover,
+.button.hvr-underline-from-center:focus {
     color: #8FC798;
 }
 
@@ -71,6 +73,7 @@ header {
     color: #969187;
 }
 
+
 section.content > h1 {
     margin-top: 30px;
 }
@@ -87,6 +90,10 @@ section.content > h1 {
     margin-right: 15px;
     background-color: rgba(216, 212, 210, 0.6);
     padding: 3px;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 footer .social {
