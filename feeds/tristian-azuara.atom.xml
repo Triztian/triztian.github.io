@@ -68,7 +68,29 @@ will not appear on the index page.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Creating a personal site is like every project, it has to be planned, it has to be contrained and it 
 has to offer oportunities of personal and professional growth.&lt;/p&gt;
-&lt;p&gt;It is an ongoing project but I believe I've set the guidelines and took advantage of the oportunities it presented.&lt;/p&gt;</summary><category term="personal-site"></category><category term="planning"></category></entry><entry><title>Mobile Foreign Rate Exchange</title><link href="tristian.us/mwfx.html" rel="alternate"></link><updated>2014-02-20T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:,2014-02-20:tristian.us/mwfx.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;It is an ongoing project but I believe I've set the guidelines and took advantage of the oportunities it presented.&lt;/p&gt;</summary><category term="personal-site"></category><category term="planning"></category></entry><entry><title>Enterprise Secure Messaging</title><link href="tristian.us/mblsft.html" rel="alternate"></link><updated>2014-06-20T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:,2014-06-20:tristian.us/mblsft.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;An Indonesia based design firm needed for their mobile app designs to be implemented.
+The application allowed for it's users to track rate exchange pairs and see how the prices (bid, ask, 
+high and low) have changed at different time resolutions (seconds, minutes, hours and days).&lt;/p&gt;
+&lt;p&gt;Pricing information was obtained from Megawastu's propietary api.&lt;/p&gt;
+&lt;h3&gt;Why I worked on this project&lt;/h3&gt;
+&lt;p&gt;Having worked as a frontend developer I had the experience and skills to create a solution that would be 
+cross platform, usable and consistent.&lt;/p&gt;
+&lt;h3&gt;What problems got solved&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Having to manually check trading prices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Having to manually summarize price deltas accross different timespans.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Efforts to develop for different platforms were reduced by using a hybrid app development approach&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;p&gt;An app was delivered within 60 days, meeting design requirements, functional requirements and several improvements to the 
+API were suggested to improve integration with mobile devices.&lt;/p&gt;</summary><category term="mobile"></category><category term="android"></category><category term="blackberry10"></category><category term="cryptography"></category><category term="ui"></category></entry><entry><title>Mobile Foreign Rate Exchange</title><link href="tristian.us/mwfx.html" rel="alternate"></link><updated>2014-02-20T00:00:00-07:00</updated><author><name>Tristian Azuara</name></author><id>tag:,2014-02-20:tristian.us/mwfx.html</id><summary type="html">&lt;h3&gt;Overview&lt;/h3&gt;
 &lt;p&gt;An Indonesia based design firm needed for their mobile app designs to be implemented.
 The application allowed for it's users to track rate exchange pairs and see how the prices (bid, ask, 
 high and low) have changed at different time resolutions (seconds, minutes, hours and days).&lt;/p&gt;
